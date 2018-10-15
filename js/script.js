@@ -13,7 +13,7 @@ while (i < 3) {
 // var b= 1;
 // for (var i = 0; i < 10; i++) {
 // 	b+=b;
-// 	alert(i);
+// 	alert(b );
 // 	}
 
 // function summa(obj) {
@@ -49,3 +49,14 @@ while (i < 3) {
 // если отмена ввода или пустая строка 
 // завершить оба цикла if (!input) break outer; 
 // (*) } } alert('Готово!');
+
+function nTime(obj) { 
+	var t=new Date();
+	var d=t.getFullYear(); 
+	var a=t.getMonth();
+	var b=t.getDate(); 
+	var h=t.getHours(); 
+	var m=t.getMinutes(); 
+	var s=t.getSeconds(); 
+	var result=d +". "+b +". "+a +". "+h+":"+m+":"+s; 
+	obj.res.value=result; }
